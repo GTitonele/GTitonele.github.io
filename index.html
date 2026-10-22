@@ -8,7 +8,26 @@
 
 	<meta
 		name="description"
-		content="Developer portfolio of Guilherme Titonele — Computer Engineering, Systems Analysis and Development, and 42 Porto student."
+		content="Portfolio of Guilherme Titonele Baccelli — legal systems and process automation professional moving into IT. Computer Engineering, Systems Analysis and Development, and 42 Porto student."
+	>
+	<meta name="theme-color" content="#08090b">
+
+	<!-- Open Graph (link previews on LinkedIn, WhatsApp, etc.) -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://gtitonele.github.io/">
+	<meta property="og:title" content="Guilherme Titonele Baccelli | Developer Portfolio">
+	<meta
+		property="og:description"
+		content="Legal systems and process automation professional moving into IT. Computer Engineering, ADS and 42 Porto student."
+	>
+
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700;800&display=swap"
 	>
 
 	<link rel="stylesheet" href="style.css">
@@ -19,35 +38,50 @@
 	<div class="page-shell">
 
 		<header class="navbar">
-			<a href="#home" class="brand">GT</a>
+			<a href="#home" class="brand" aria-label="Back to top">GT</a>
 
-			<nav class="nav-links">
-				<a href="#home">Home</a>
+			<nav id="nav-links" class="nav-links" aria-label="Main navigation">
 				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
 				<a href="#skills">Skills</a>
 				<a href="#projects">Projects</a>
+				<a href="#education">Education</a>
 				<a href="#contact">Contact</a>
 			</nav>
 
-			<a
-				href="https://github.com/GTitonele"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="github-link"
-			>
-				GitHub
-			</a>
+			<div class="navbar-actions">
+				<a
+					href="https://github.com/GTitonele"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="github-link"
+				>
+					GitHub
+				</a>
+
+				<button
+					type="button"
+					class="menu-toggle"
+					aria-label="Open menu"
+					aria-controls="nav-links"
+					aria-expanded="false"
+				>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 		</header>
 
 		<main>
 
+			<!-- ========== HERO ========== -->
 			<section id="home" class="hero">
 
 				<div class="hero-left">
 
 					<div class="availability">
 						<span class="availability-dot"></span>
-						Building new projects
+						Open to IT roles · Porto
 					</div>
 
 					<p class="eyebrow">
@@ -60,29 +94,26 @@
 					</h1>
 
 					<h2>
-						Computer Engineering, ADS
+						From legal systems to IT.
 						<br>
-						& 42 Porto student.
+						Computer Engineering, ADS & 42 Porto student.
 					</h2>
 
 					<p class="hero-description">
-						Building strong foundations in software development,
-						algorithms and systems while turning what I learn
-						into practical projects.
+						Since 2017 I have been running legal software,
+						process automation and systems support for law firms.
+						Now I am building strong foundations in software
+						development, algorithms and Linux, and turning
+						what I learn into practical projects.
 					</p>
 
 					<div class="hero-actions">
-						<a href="#projects" class="button primary">
-							Explore Projects
+						<a href="#experience" class="button primary">
+							See Experience
 						</a>
 
-						<a
-							href="https://github.com/GTitonele"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="button secondary"
-						>
-							View GitHub
+						<a href="#projects" class="button secondary">
+							Explore Projects
 						</a>
 					</div>
 
@@ -115,16 +146,21 @@
 									Guilherme Titonele Baccelli
 								</p>
 
+								<p>
+									<span class="key">location:</span>
+									Porto, Portugal
+								</p>
+
 								<p class="terminal-title">
 									<span class="key">roles:</span>
 								</p>
 
 								<p class="terminal-indent">
-									- Computer Engineering Student
+									- Legal Systems & Process Automation
 								</p>
 
 								<p class="terminal-indent">
-									- Systems Analysis & Development Student
+									- Computer Engineering & ADS Student
 								</p>
 
 								<p class="terminal-indent">
@@ -140,7 +176,6 @@
 							<div class="terminal-block">
 								<p><span class="key">stack:</span> C · JavaScript · HTML · CSS · Linux · Git</p>
 								<p><span class="key">learning:</span> Algorithms · Data Structures · Systems Programming</p>
-								<p><span class="key">focus:</span> Software Development</p>
 							</div>
 
 							<div class="terminal-line terminal-spacing">
@@ -149,10 +184,27 @@
 							</div>
 
 							<div class="terminal-block">
-								<p class="project-terminal-name"><a href="https://titonelebaccelli.com.br" target="_blank" rel="noopener noreferrer">titonelebaccelli.com.br</a></p>
+								<p class="project-terminal-name">
+									<a href="https://titonelebaccelli.com.br" target="_blank" rel="noopener noreferrer">titonelebaccelli.com.br</a>
+								</p>
 								<p class="terminal-muted">Website · HTML · CSS · JavaScript</p>
-								<p class="project-terminal-name terminal-project-gap"><a href="https://tosquiacomarte.pt" target="_blank" rel="noopener noreferrer">tosquiacomarte.pt</a></p>
+
+								<p class="project-terminal-name terminal-project-gap">
+									<a href="https://tosquiacomarte.pt" target="_blank" rel="noopener noreferrer">tosquiacomarte.pt</a>
+								</p>
 								<p class="terminal-muted">Website · HTML · CSS · JavaScript</p>
+							</div>
+
+							<div class="terminal-line terminal-spacing">
+								<span class="prompt">&gt;</span>
+								<span class="command">projects --wip</span>
+							</div>
+
+							<div class="terminal-block">
+								<p class="project-terminal-name">
+									<a href="https://clinicabaccelli.com.br/" target="_blank" rel="noopener noreferrer">clinicabaccelli.com.br</a>
+								</p>
+								<p class="terminal-muted">Website · In development</p>
 							</div>
 
 							<div class="terminal-line terminal-spacing">
@@ -161,7 +213,9 @@
 							</div>
 
 							<div class="terminal-block">
-								<p class="project-terminal-name"><a href="https://github.com/GTitonele/skyscraper-solver" target="_blank" rel="noopener noreferrer">skyscraper-solver</a></p>
+								<p class="project-terminal-name">
+									<a href="https://github.com/GTitonele/skyscraper-solver" target="_blank" rel="noopener noreferrer">skyscraper-solver</a>
+								</p>
 								<p class="terminal-muted">C · Backtracking · Recursion · Makefile</p>
 							</div>
 
@@ -178,6 +232,7 @@
 
 			</section>
 
+			<!-- ========== 01 / ABOUT ========== -->
 			<section id="about" class="section">
 
 				<div class="section-heading">
@@ -189,7 +244,15 @@
 
 					<div class="about-main">
 						<p>
-							I'm currently studying
+							I have a <strong>Law degree</strong> and a postgraduate
+							degree in <strong>Real Estate Law</strong>, but most of my
+							career has been on the technical side of legal work:
+							legal software, process automation, reporting and
+							systems support for law firms.
+						</p>
+
+						<p>
+							That work is what made me move into IT. I am now studying
 							<strong>Computer Engineering</strong> and
 							<strong>Systems Analysis and Development</strong>
 							while progressing through the
@@ -197,15 +260,9 @@
 						</p>
 
 						<p>
-							My current goal is to build a solid technical
-							foundation in programming, algorithms, Linux,
-							memory management and software development.
-						</p>
-
-						<p>
-							I enjoy understanding how software works internally
-							and turning new concepts into practical,
-							well-documented projects.
+							I enjoy understanding how software works internally,
+							solving problems for the people who use it, and turning
+							new concepts into practical, well-documented projects.
 						</p>
 					</div>
 
@@ -226,10 +283,60 @@
 
 			</section>
 
+			<!-- ========== 02 / EXPERIENCE ========== -->
+			<section id="experience" class="section">
+
+				<div class="section-heading">
+					<p>02 / EXPERIENCE</p>
+					<h2>Where I work.</h2>
+				</div>
+
+				<div class="experience-list">
+
+					<article class="experience-card">
+						<div class="experience-meta">
+							<p class="experience-period">2017 — Present</p>
+							<p class="experience-place">Remote · São Paulo, Brazil</p>
+						</div>
+
+						<div class="experience-body">
+							<h3>Legal Systems & Process Automation Coordinator</h3>
+							<p class="experience-company">Titonele Baccelli Sociedade de Advogados</p>
+
+							<ul>
+								<li>Coordinate the firm's legal software and internal systems.</li>
+								<li>Automate recurring processes and reports, such as court notices and hearing schedules extracted from the case management system.</li>
+								<li>Designed, built and maintain the firm's website, including hosting and domain management.</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="experience-card">
+						<div class="experience-meta">
+							<p class="experience-period">2019 — Present</p>
+							<p class="experience-place">Remote · São Paulo, Brazil</p>
+						</div>
+
+						<div class="experience-body">
+							<h3>Legal Operations & Systems Support Analyst</h3>
+							<p class="experience-company">Azevedo e Satin Advogados Associados</p>
+
+							<ul>
+								<li>Provide day-to-day support to users of the firm's legal systems.</li>
+								<li>Keep legal operations workflows running and troubleshoot system issues.</li>
+							</ul>
+						</div>
+					</article>
+
+				</div>
+
+			</section>
+
+			<!-- ========== 03 / SKILLS ========== -->
 			<section id="skills" class="section">
 
 				<div class="section-heading">
-					<p>02 / SKILLS</p>
+					<p>03 / SKILLS</p>
 					<h2>Current stack.</h2>
 				</div>
 
@@ -274,29 +381,48 @@
 					<article class="skill-card">
 						<span class="skill-number">05</span>
 						<h3>JavaScript</h3>
-						<p>Interactive interfaces, DOM manipulation and front-end development fundamentals.</p>
+						<p>
+							Interactive interfaces, DOM manipulation
+							and front-end development fundamentals.
+						</p>
 					</article>
 
 					<article class="skill-card">
 						<span class="skill-number">06</span>
 						<h3>HTML</h3>
-						<p>Semantic structure, accessible markup and responsive web page foundations.</p>
+						<p>
+							Semantic structure, accessible markup
+							and responsive web page foundations.
+						</p>
 					</article>
 
 					<article class="skill-card">
 						<span class="skill-number">07</span>
 						<h3>CSS</h3>
-						<p>Responsive layouts, modern styling, visual systems and interface design.</p>
+						<p>
+							Responsive layouts, modern styling,
+							visual systems and interface design.
+						</p>
+					</article>
+
+					<article class="skill-card">
+						<span class="skill-number">08</span>
+						<h3>Systems Support</h3>
+						<p>
+							User support, troubleshooting and
+							process automation for business software.
+						</p>
 					</article>
 
 				</div>
 
 			</section>
 
+			<!-- ========== 04 / PROJECTS ========== -->
 			<section id="projects" class="section">
 
 				<div class="section-heading">
-					<p>03 / PROJECTS</p>
+					<p>04 / PROJECTS</p>
 					<h2>Featured work.</h2>
 				</div>
 
@@ -331,16 +457,7 @@
 								rel="noopener noreferrer"
 								class="button primary"
 							>
-								View Project
-							</a>
-
-							<a
-								href="https://github.com/GTitonele/skyscraper-solver"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="text-link"
-							>
-								Source Code →
+								View Source Code
 							</a>
 						</div>
 
@@ -370,33 +487,144 @@
 				</div>
 
 				<div class="project-card project-card-spaced">
+
 					<div class="project-copy">
-						<p class="project-label">LIVE WEB PROJECT</p>
+
+						<p class="project-label">
+							LIVE WEB PROJECT
+						</p>
+
 						<h3>Titonele Baccelli</h3>
-						<p>Professional website developed and maintained end-to-end, including front-end implementation, deployment and domain management.</p>
-						<div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web Development</span></div>
-						<div class="project-actions"><a href="https://titonelebaccelli.com.br" target="_blank" rel="noopener noreferrer" class="button primary">Visit Website</a></div>
+
+						<p>
+							Professional website developed and maintained
+							end-to-end, including front-end implementation,
+							deployment and domain management.
+						</p>
+
+						<div class="project-tags">
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>JavaScript</span>
+							<span>Web Development</span>
+						</div>
+
+						<div class="project-actions">
+							<a
+								href="https://titonelebaccelli.com.br"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="button primary"
+							>
+								Visit Website
+							</a>
+						</div>
+
 					</div>
-					<div class="project-preview website-preview"><span class="preview-domain">titonelebaccelli.com.br</span><strong>Live Website</strong><span>Design · Development · Domain Management</span></div>
+
+					<div class="project-preview website-preview">
+						<span class="preview-domain">titonelebaccelli.com.br</span>
+						<strong>Live Website</strong>
+						<span>Design · Development · Domain Management</span>
+					</div>
+
 				</div>
 
 				<div class="project-card project-card-spaced">
+
 					<div class="project-copy">
-						<p class="project-label">LIVE WEB PROJECT</p>
+
+						<p class="project-label">
+							LIVE WEB PROJECT
+						</p>
+
 						<h3>Tosquia com Arte</h3>
-						<p>Business website developed and maintained from implementation through publishing, including domain and web presence management.</p>
-						<div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web Development</span></div>
-						<div class="project-actions"><a href="https://tosquiacomarte.pt" target="_blank" rel="noopener noreferrer" class="button primary">Visit Website</a></div>
+
+						<p>
+							Business website developed and maintained
+							from implementation through publishing,
+							including domain and web presence management.
+						</p>
+
+						<div class="project-tags">
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>JavaScript</span>
+							<span>Web Development</span>
+						</div>
+
+						<div class="project-actions">
+							<a
+								href="https://tosquiacomarte.pt"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="button primary"
+							>
+								Visit Website
+							</a>
+						</div>
+
 					</div>
-					<div class="project-preview website-preview"><span class="preview-domain">tosquiacomarte.pt</span><strong>Live Website</strong><span>Design · Development · Domain Management</span></div>
+
+					<div class="project-preview website-preview">
+						<span class="preview-domain">tosquiacomarte.pt</span>
+						<strong>Live Website</strong>
+						<span>Design · Development · Domain Management</span>
+					</div>
+
+				</div>
+
+				<div class="project-card project-card-spaced">
+
+					<div class="project-copy">
+
+						<p class="project-label">
+							WEB PROJECT · <span class="status-wip">IN DEVELOPMENT</span>
+						</p>
+
+						<h3>Clínica Baccelli</h3>
+
+						<p>
+							Website for a clinic, currently in development.
+							Domain and hosting are already set up, with a
+							maintenance page live while the full site is built.
+						</p>
+
+						<div class="project-tags">
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>JavaScript</span>
+							<span>Web Development</span>
+						</div>
+
+						<div class="project-actions">
+							<a
+								href="https://clinicabaccelli.com.br/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="button secondary"
+							>
+								Visit Website
+							</a>
+						</div>
+
+					</div>
+
+					<div class="project-preview website-preview">
+						<span class="preview-domain">clinicabaccelli.com.br</span>
+						<strong>Coming Soon</strong>
+						<span>Design · Development · Domain Management</span>
+					</div>
+
 				</div>
 
 			</section>
 
-			<section class="section">
+			<!-- ========== 05 / EDUCATION ========== -->
+			<section id="education" class="section">
 
 				<div class="section-heading">
-					<p>04 / EDUCATION</p>
+					<p>05 / EDUCATION</p>
 					<h2>My learning path.</h2>
 				</div>
 
@@ -407,45 +635,7 @@
 
 						<div>
 							<p class="timeline-tag">
-								DEGREE
-							</p>
-
-							<h3>
-								Systems Analysis & Development
-							</h3>
-
-							<p>
-								Programming, software development
-								and information systems.
-							</p>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-dot"></div>
-
-						<div>
-							<p class="timeline-tag">
-								DEGREE
-							</p>
-
-							<h3>
-								Computer Engineering
-							</h3>
-
-							<p>
-								Computer systems, engineering
-								and software foundations.
-							</p>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-dot"></div>
-
-						<div>
-							<p class="timeline-tag">
-								PROJECT-BASED LEARNING
+								PROJECT-BASED LEARNING · IN PROGRESS
 							</p>
 
 							<h3>
@@ -453,8 +643,66 @@
 							</h3>
 
 							<p>
-								Algorithms, C, Unix and
+								Piscine in C and Shell. Common Core starting
+								October 2026: algorithms, C, Unix and
 								peer-to-peer programming education.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+
+						<div>
+							<p class="timeline-tag">
+								DEGREE · IN PROGRESS
+							</p>
+
+							<h3>
+								Computer Engineering
+							</h3>
+
+							<p>
+								Universidade Cruzeiro do Sul (distance learning).
+								Computer systems, engineering and software foundations.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+
+						<div>
+							<p class="timeline-tag">
+								DEGREE · IN PROGRESS
+							</p>
+
+							<h3>
+								Systems Analysis & Development
+							</h3>
+
+							<p>
+								Universidade São Judas Tadeu (distance learning).
+								Programming, software development and information systems.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item timeline-item-done">
+						<div class="timeline-dot"></div>
+
+						<div>
+							<p class="timeline-tag">
+								DEGREE · COMPLETED
+							</p>
+
+							<h3>
+								Law & Postgraduate in Real Estate Law
+							</h3>
+
+							<p>
+								The background behind my work with legal
+								systems and process automation.
 							</p>
 						</div>
 					</div>
@@ -463,26 +711,35 @@
 
 			</section>
 
+			<!-- ========== 06 / CONTACT ========== -->
 			<section id="contact" class="section contact-section">
 
 				<div class="contact-box">
 
 					<p class="section-mini-label">
-						05 / CONTACT
+						06 / CONTACT
 					</p>
 
-					<h2>Let's build something.</h2>
+					<h2>Let's talk.</h2>
 
 					<p>
-						Explore my projects and follow my development journey.
+						Open to IT support, systems and junior development
+						roles in Porto. Feel free to reach out.
 					</p>
 
 					<div class="contact-actions">
 						<a
+							href="mailto:gtbaccelli@gmail.com"
+							class="button primary"
+						>
+							gtbaccelli@gmail.com
+						</a>
+
+						<a
 							href="https://github.com/GTitonele"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="button primary"
+							class="button secondary"
 						>
 							GitHub Profile
 						</a>

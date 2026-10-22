@@ -1,27 +1,29 @@
+// Current year in the footer
 const year = document.getElementById("year");
 
 year.textContent = new Date().getFullYear();
 
-const links = document.querySelectorAll('a[href^="#"]');
+// Mobile menu
+const navbar = document.querySelector(".navbar");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-links.forEach((link) => {
-	link.addEventListener("click", (event) => {
-		const targetId = link.getAttribute("href");
+function setMenu(open) {
+	navbar.classList.toggle("menu-open", open);
+	menuToggle.setAttribute("aria-expanded", String(open));
+	menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+}
 
-		if (targetId === "#") {
-			return;
-		}
+menuToggle.addEventListener("click", () => {
+	setMenu(!navbar.classList.contains("menu-open"));
+});
 
-		const target = document.querySelector(targetId);
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => setMenu(false));
+});
 
-		if (!target) {
-			return;
-		}
-
-		event.preventDefault();
-
-		target.scrollIntoView({
-			behavior: "smooth"
-		});
-	});
+document.addEventListener("keydown", (event) => {
+	if (event.key === "Escape") {
+		setMenu(false);
+	}
 });
