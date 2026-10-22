@@ -224,6 +224,7 @@ main {
 	padding-top: 90px;
 	padding-bottom: 100px;
 
+	overflow-x: hidden; /* fallback for older mobile browsers */
 	overflow-x: clip;
 }
 
@@ -1143,6 +1144,11 @@ footer span {
 
 	.hero h1 {
 		letter-spacing: -3px;
+	}
+
+	/* Keep the glow inside the screen on phones */
+	.hero-right::before {
+		inset: -20px 0;
 	}
 
 	.terminal-body {
