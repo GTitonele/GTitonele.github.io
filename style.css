@@ -686,6 +686,14 @@ main {
 	color: var(--muted);
 }
 
+.experience-body li a {
+	color: var(--blue);
+}
+
+.experience-body li a:hover {
+	text-decoration: underline;
+}
+
 .experience-body li::before {
 	content: "→";
 
